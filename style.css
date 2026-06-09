@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background: #220506;
     color: white;
@@ -13,27 +19,34 @@ body {
 
 .intro {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
     color: rgb(245, 243, 243);
-    margin-left: 5.5%;
-    margin-right: 5%;
-    margin-bottom: 10%;
+    margin: 0 auto 10%;
+    padding: 0 5%;
 }
 
 .introbanner {
-    max-width: 40%;
-    min-width: 40%;
+    flex: 1 1 360px;
+    max-width: 600px;
+    min-width: 280px;
 }
 
 .introdado {
+    flex: 1 1 320px;
+    min-width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 340px;
+    position: relative;
 }
 
 .texto-nome {
     color: #000000;
-   font-size: 20px;
+    font-size: 20px;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
     padding: 0 17px;
 }
@@ -110,29 +123,26 @@ hr {
 
 .container {
     display: flex;
-    margin: 5% 5% 5% 2%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 5% 5% 5% 5%;
     background-color: #242020;
 }
 
 .card {
     background-color: #dfdfdf;
-    width: 1000px;
-    height: 366, 53;
-    max-width: 1000px;
-    max-height: 720px;
-    margin: 20px;
+    flex: 1 1 320px;
+    min-height: 260px;
+    max-width: 100%;
+    margin: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
+    overflow: hidden;
 }
 
-.card video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
+.card video,
 .card img {
     width: 100%;
     height: 100%;
@@ -141,6 +151,7 @@ hr {
 }
 
 .infocontainer {
+    flex: 1 1 280px;
     max-width: 500px;
     margin-left: 20px;
     color: #e6e6e6;
@@ -148,9 +159,16 @@ hr {
 
 .containercurriculo {
     color: #e6e6e6;
-    margin: 5% 5% 5% 2%;
+    margin: 5% 5% 5% 5%;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
+    justify-content: space-between;
+}
+
+.containercurriculo>div {
+    flex: 1 1 320px;
+    min-width: 280px;
 }
 
 .btnCurriculo {
@@ -158,7 +176,7 @@ hr {
     color: rgb(255, 0, 0);
 }
 
-.btnCurriculo :hover {
+.btnCurriculo:hover {
     color: rgb(58, 21, 21);
 }
 
@@ -180,13 +198,13 @@ hr {
 
 footer {
     background-color: #000000;
-    display: flex;
+    display: block;
     width: 100%;
-    height: 100%;
+    min-height: auto;
 }
 
 .intro .button {
-    margin: 0, 0, 0, 0;
+    margin: 0;
     height: auto;
     background: transparent;
     padding: 0;
@@ -239,18 +257,22 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 20px 0;
+    gap: 10px;
 }
 
 nav li {
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -396,6 +418,8 @@ nav a:hover {
 .juntarcont {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .tec {
@@ -407,7 +431,8 @@ nav a:hover {
     position: absolute;
     left: 50%;
     top: 70%;
-    transform: scale(1.5, 1.5) translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.5);
+    transform-origin: center;
 }
 
 .floor {
@@ -1023,90 +1048,502 @@ nav a:hover {
     }
 }
 
-    .tecnologia{
-        padding: 0 25px;
-        
-    }
+.tecnologia {
+    padding: 0 25px;
 
-    .footer {
-  background-color: #2a2a2a;
-  color: white;
-  padding: 60px 50px 20px;
+}
+
+.footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 60px 50px 20px;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
 }
 
 .footer-section h3 {
-  color: white;
-  margin: 0 0 15px 0;
-  font-size: 18px;
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: 18px;
 }
 
 .footer-section h4 {
-  color: white;
-  margin: 0 0 15px 0;
-  font-size: 16px;
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: 16px;
 }
 
 .footer-section p {
-  color: #aaa;
-  font-size: 14px;
-  margin: 0 0 10px 0;
-  line-height: 1.6;
+    color: #aaa;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
 }
 
 .footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-section ul li a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: white;
+    color: white;
 }
 
 .social-links {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-links a {
-  width: 40px;
-  height: 40px;
-  background-color: #0e4291;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  transition: background-color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    background-color: #0e4291;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
 .social-links a:hover {
-  background-color: #191ce2;
+    background-color: #191ce2;
 }
 
 .footer-bottom {
-  text-align: center;
-  border-top: 1px solid #444;
-  padding-top: 20px;
-  color: #aaa;
-  font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .intro {
+        padding: 0 4%;
+    }
+
+    .container,
+    .containercurriculo {
+        margin: 4% 4% 4% 4%;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 0 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        margin: 0 auto 8%;
+        padding: 0 4%;
+    }
+
+    .introbanner,
+    .introdado {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        min-width: auto;
+    }
+
+    .botoesbanner {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .Btn,
+    .Btn2 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-height: 260px;
+    }
+
+    .infocontainer {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .containercurriculo {
+        gap: 24px;
+    }
+
+    .juntarcont {
+        justify-content: center;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 38px;
+    }
+
+    .texto-nome {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .outdor {
+        padding: 25px 0;
+    }
+
+    .infocenter {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    .infocenter h3 {
+        font-size: 28px;
+    }
+
+    .container {
+        margin: 3% 3% 3% 3%;
+    }
+
+    .card {
+        min-height: 240px;
+    }
+
+    .containercurriculo {
+        gap: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav h2,
+    nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 10px 0 0;
+    }
+
+    nav li {
+        margin: 0 12px;
+    }
+
+    .intro {
+        padding: 0 3%;
+    }
+
+    .botoesbanner {
+        gap: 10px;
+    }
+
+    .Btn,
+    .Btn2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Btn2:hover {
+        width: 120px;
+    }
+
+    .container,
+    .containercurriculo {
+        margin: 2.5% 2.5% 2.5% 2.5%;
+    }
+
+    .infocenter,
+    .infocontainer,
+    .containercurriculo {
+        padding: 0 10px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .texto-nome {
+        font-size: 16px;
+    }
+
+    .infocenter {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 2% 2% 2% 2%;
+    }
+
+    .card {
+        min-height: 220px;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 15px;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 13px;
+    }
+}
+
+/* ===== RESPONSIVIDADE AVANÇADA ===== */
+
+/* Evita estouro de imagens e vídeos */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Títulos fluidos */
+h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+/* Texto fluido */
+.texto-nome {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+/* Containers principais */
+.intro,
+.container,
+.containercurriculo,
+.footer-content,
+.infocenter {
+    width: 100%;
+}
+
+/* Melhor distribuição dos cards */
+.container {
+    justify-content: center;
+}
+
+/* Card totalmente adaptável */
+.card {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Banner */
+.introbanner,
+.infocontainer {
+    width: 100%;
+}
+
+/* Navegação */
+nav ul {
+    row-gap: 10px;
+}
+
+/* Botões */
+.botoesbanner {
+    flex-wrap: wrap;
+}
+
+/* Área da animação */
+.introdado {
+    overflow: hidden;
+}
+
+/* Animação responsiva */
+.wrapper {
+    transform-origin: center;
+}
+
+.floor {
+    width: min(350px, 90vw);
+}
+
+.candles {
+    width: min(250px, 70vw);
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .wrapper {
+        transform:
+            scale(1.15) translate(-50%, -50%);
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .botoesbanner {
+        justify-content: center;
+    }
+
+    .tec {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    .container,
+    .containercurriculo {
+        flex-direction: column;
+    }
+
+    .card {
+        min-height: 200px;
+    }
+
+    .intro .button {
+        --fs-size: 1.4em;
+    }
+
+    .wrapper {
+        transform:
+            scale(0.9) translate(-50%, -50%);
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    .wrapper {
+        transform:
+            scale(0.75) translate(-50%, -50%);
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    .Btn2:hover {
+        width: 100px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .infocenter,
+    .infocontainer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* Galaxy Fold e similares */
+@media (max-width: 320px) {
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .texto-nome {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        transform:
+            scale(0.6) translate(-50%, -50%);
+    }
+
+    .Btn,
+    .Btn2 {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Monitores grandes */
+@media (min-width: 1600px) {
+
+    .intro,
+    .container,
+    .containercurriculo,
+    .footer-content {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Monitores ultrawide */
+@media (min-width: 2560px) {
+
+    .intro,
+    .container,
+    .containercurriculo,
+    .footer-content {
+        max-width: 1800px;
+    }
+
+    body {
+        font-size: 20px;
+    }
 }
