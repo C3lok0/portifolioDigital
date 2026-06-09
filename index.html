@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal</title>
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <div>
+            <!-- <header>
+            POTIFOLIO
+            <img src="images/git.svg" alt="" style="height: 40px; margin-left: 10px;">
+        </header> -->
+            <nav>
+                <h2 class="texto-nome">MARCELO JUNIOR</h2>
+                <ul>
+                    <li><a href="#sobremim" alt="Sobre mim">SOBRE</a></li>
+                    <li><a href="#projetos" alt="Projetos">PROJETOS</a></li>
+                    <li><a href="#curriculo" alt="Currículo">CURRICULO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- INTRO -->
+        <div class="intro">
+            <div class="introbanner">
+                <section>
+                    <!-- <h2 class="texto-nome">MARCELO JUNIOR</h2> -->
+                    <h2>
+                        The my Repository;<br> Personal Website;<br> Development site;<br>Showcase;
+                    </h2>
+
+                    <p>
+                        Bem-vindo ao meu portfólio! Este é um espaço onde compartilho meus projetos,
+                        experiências e
+                        habilidades. Aqui você encontrará uma variedade de trabalhos que refletem minha paixão por
+                        tecnologia e desenvolvimento. Sinta-se à vontade para explorar e conhecer mais sobre mim e meus
+                        projetos.
+                    </p>
+                </section>
+                <br>
+
+                <div class="botoesbanner">
+                    <button class="Btn" id="githubBtn">
+                        <span class="svgContainer">
+                            <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="BG"></span>
+                    </button>
+                    <!-- From Uiverse.io by Gaurang7717 -->
+                    <button class="Btn2" id="linkedinBtn">
+                        <div class="sign">
+                            <svg fill="white" class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="1.6em"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <div class="text"> Linkedln</div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="introdado">
+                <div class="wrapper">
+                    <div class="candles">
+                        <div class="light__wave"></div>
+                        <div class="candle1">
+                            <div class="candle1__body">
+                                <div class="candle1__eyes">
+                                    <span class="candle1__eyes-one"></span>
+                                    <span class="candle1__eyes-two"></span>
+                                </div>
+                                <div class="candle1__mouth"></div>
+                            </div>
+                            <div class="candle1__stick"></div>
+                        </div>
+                        <div class="candle2">
+                            <div class="candle2__body">
+                                <div class="candle2__eyes">
+                                    <div class="candle2__eyes-one"></div>
+                                    <div class="candle2__eyes-two"></div>
+                                </div>
+                            </div>
+                            <div class="candle2__stick"></div>
+                        </div>
+                        <div class="candle2__fire"></div>
+                        <div class="sparkles-one"></div>
+                        <div class="sparkles-two"></div>
+                        <div class="candle__smoke-one"></div>
+                        <div class="candle__smoke-two"></div>
+                    </div>
+                    <div class="floor"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- SOBRE MIM -->
+        <div class="outdor">
+            <div class="infocenter">
+                <section id="sobremim">
+                    <h3> <big>SOBRE </big></h3>
+                </section>
+                <p>Me chamo Marcelo, nascido em 2007 em Itapecerica da Serra em São Paulo ,estudante de tecnologia,
+                    tecnico pela etec (Escolas Técnicas Estaduais)
+                    pelo Governo do Estado de São Paulo e administradas pelo Centro Paula Souza, tenho interesse em
+                    desenvolvimento web, versionamento com Git e na criação de projetos práticos para meu portfólio.
+                    Alem disso, estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para me
+                    tornar um profissional mais completo e preparado para os desafios do mercado de trabalho.
+                </p>
+                <br>
+                <p>Tive contato com tecnologia desde cedo, sempre me interessando por como as coisas funcionam, e isso
+                    me levou a explorar diferentes áreas, como programação, design e administração de sistemas. Comecei
+                    meus estudos na área de tecnologia em 2022 com informatica basica, apesar de ja ter estudado um
+                    pouco por conta propria.
+                    Passando por algumas instituições, como Sesi, ETEC, IFRS e atualmente a Fatec.
+                    Atualmente com ideias de projetos na area de desenvolvimento, com conhecidos e amigos, nos quais
+                    quero compartilhar e expor nesse portifolio.
+                </p>
+            </div>
+
+        </div>
+        <!-- PROJETOS -->
+        <div class="outdor">
+            <div class="infocenter">
+                <section id="projetos">
+                    <h3> <big>PROJETOS </big></h3>
+
+                    <p> Aqui estão alguns dos projetos em que trabalhei, ou estou trabalhando atualmente,
+                        incluindo projetos pessoais, acadêmicos e colaborativos. Cada projeto representa uma
+                        oportunidade de
+                        aprendizado e crescimento, e estou sempre aberto a novos desafios e colaborações. Sinta-se à
+                        vontade
+                        para explorar os detalhes de cada projeto.
+                    </p>
+            </div>
+        </div>
+
+        <!-- PROJETOS VIDEOS -->
+        <div class="outdor">
+            <div class="container">
+                <div class="card">
+                    <video autoplay muted controls>
+                        <source src="images/Projetos/Promoin/part1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="infocontainer">
+                    <h4>Promoin</h4>
+                    <p>Projeto de um sistema de promoções, onde o cliente pode cadastrar suas promoções, e os
+                        consumidores podem acessar e aproveitar as ofertas disponíveis. O sistema inclui recursos
+                        como cadastro de usuários, gerenciamento de promoções, e uma interface amigável para facilitar a
+                        navegação e a utilização do serviço.</p>
+                    <p>
+                        Projeto foi criado juntamente de outras pessoas, feito pelo curso de desenvolvimento web da
+                        ETEC, onde o objetivo era criar um sistema de promoções para o TCC, tinha tanto Login por
+                        consumidor, e pelo lojista.
+                    </p>
+                    <p>
+                        Membros que participaram do projeto: Marcelo Antonio Rodrigues Junior, Rafael Marques, Angelo
+                        Luiz, Hugo Leonel e
+                        Elton. Todos pela Etec, e o projeto foi desenvolvido utilizando as seguintes tecnologias: HTML,
+                        CSS, JavaScript,
+                        Node.js, react, Xampp, PHP e Mysql.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="outdor">
+            <div class="container">
+                <div class="card">
+                    <img src="images/Projetos/Repositorio/home.png" alt="Projeto Repositório">
+                </div>
+                <div class="infocontainer">
+                    <h4>portifolio</h4>
+                    <p>Projeto de um portfólio pessoal, onde apresento meus trabalhos e habilidades. Feito com HTML, CSS
+                        e JavaScript.</p>
+                    <p>
+                        O objetivo do projeto era criar um espaço para exibir meu portfólio e destacar minhas
+                        habilidades e experiências além de
+                        trabalhos pela faculdade e me autodesafiar.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Curriculo -->
+        <div class="outdor">
+            <div class="infocenter">
+                <section id="curriculo">
+                    <h3> <big>CURRICULO </big></h3>
+
+                    <p>Aqui estão algumas informações sobre minha formação acadêmica, experiências profissionais e
+                        habilidades.
+                        Meu currículo reflete minha jornada de aprendizado e crescimento na área de tecnologia,
+                        destacando minhas
+                        conquistas e competências. Sinta-se à vontade para explorar os detalhes do meu currículo e
+                        conhecer mais sobre
+                        minha trajetória profissional.</p>
+                    </p>
+            </div>
+
+            <div class="juntarcont">
+                <div class="containercurriculo">
+
+                    <div>
+                        <section>
+                            <h4>Formação Acadêmica</h4>
+                        </section>
+                        <ul>
+                            <li>Curso Técnico em Desenvolvimento de Sistemas - ETEC (FEV 2024 - JUL 2025)</li>
+                            <li>Curso Superior em Desenvolvimento de Software Multiplataforma - FATEC (2026- Presente)
+                            </li>
+                            <li>Ensino medio completo (2025)</li>
+                            <li>SENAI EAD -Excel básico (2023) </li>
+                            <li>ENSINO FUNDAMENTAL I & II </li>
+                            <li>SENAI -Implantação de serviços em nuvem AZ-900 (2023)</li>
+                            <li>SENAI EAD -Preparação para o mercado de trabalho (2023) </li>
+                            <li>UNIMAR -Treinamento Python (2024)</li>
+                            <li>UNIJOVEM -Informática básica (2024)</li>
+                            <li>NUBE EAD -Marketing Pessoal (2024)</li>
+                            <li>IFRS EAD -Fundamentos da informática (2024)</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        <section>
+                            <h4>Experiências</h4>
+                        </section>
+                        <ul>
+                            <li>Estagio - Telemarketing - Paschoalotto (2023) </li>
+                            <li>Freelancer - Suporte Técnico em manutenção em computadores – Etec Antônio Devisate
+                                (2025)
+                            </li>
+                            <li>Estagio - Assistente administrativo – CW15 Coworking (2025 - 2026) </li>
+                            <li>Freelancer – Desenvolvimento, TI e Adm – Syspay sistema inteligente (horários flexíveis)
+                            </li>
+                            <li>Estagio - Assistente administrativo – International Workplace Group – Régus CW15 –
+                                Marilia,
+                                SP </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="juntarcont">
+                <div class="containercurriculo">
+                    <div>
+                        <section>
+                            <h4>Alura mini cursos</h4>
+                        </section>
+                        <ul>
+                            <li>Futuro conectado: profissões e tecnologia </li>
+                            <li>Listas, funções e repetição: criando um jogo de corrida (pt. 1) </li>
+                            <li>Lógica de programação: criando arte interativa com P5.js </li>
+                            <li>Página web: desenvolvendo uma ferramenta interativa de estudo</li>
+                            <li>Página web: utilizando a responsividade em aplicações com HTML e CSS - Parte 1</li>
+                            <li>Página web: utilizando a responsividade em aplicações com HTML e CSS - Parte 2 </li>
+                            <li>Algoritmos: criando uma aventura com HTML, CSS e JavaScript </li>
+                            <li>Página web: desenvolvendo um site de assinatura de conteúdo</li>
+                            <li>Página Web: criando um catálogo de vídeos com HTML e CSS </li>
+                            <li>Conectando-se ao Mundo Profissional: Tecnologia, Currículo e Entrevista</li>
+                            <li>Funções: desenvolvendo um recomendador de filmes com JavaScript</li>
+                            <li>Lógica de programação: desenvolvendo um jogo estilo Pong</li>
+                            <li>Repositório digital: aprenda a compartilhar seus projetos </li>
+                            <li>Linguagem de programação: criando projetos artísticos com Javascript</li>
+                            <li>Listas: criando o seu jogo de cartas com listas e padrões</li>
+                            <li>Listas: criando o seu jogo de cartas com listas e padrões</li>
+                            <li>Projetos com programação: utilizando a criatividade através dos códigos</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <section>
+                            <h4>competências tecnicas</h4>
+                        </section>
+                        <ul>
+                            <li>Conhecimentos em suporte técnico (hardware e software) </li>
+                            <li>Manutenção preventiva e corretiva de computadores </li>
+                            <li>Instalação e configuração de sistemas operacionais (Windows/Linux) </li>
+                            <li>Noções básicas de redes e infraestrutura de TI </li>
+                            <li>Desenvolvimento de sistemas em (Java, Java script, HTML, CSS, PHP, Python, c) </li>
+                            <li>Banco de dados (MySQL, SQL Server, etc.)</li>
+                            <li>Versionamento de código (GitHub) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="outdor">
+            <div class="infocenter">
+                <center><a href="docs/Curriculo.pdf" download="curriculo-marcelo.pdf" class="btnCurriculo">Baixar
+                        curriculo
+                        pdf </a></center>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="outdor">
+            <di class="tec">
+
+            </di>
+        </div>
+
+        <div class="outdor">
+            <div class="tecnologia">
+
+            </div>
+        </div>
+
+        <!-- <div class="outdor">
+            <div class="infocenter">
+                <section id="redes">
+                    <h3> <big>REDES SOCIAIS </big></h3>
+
+                    <p>Aqui estão minhas redes sociais, onde compartilho atualizações sobre meus projetos, pensamentos e interações com a comunidade de tecnologia. Sinta-se à vontade para me seguir e se conectar comigo nas plataformas abaixo:</p>
+                    </p>
+            </div> -->
+        <footer id="contato" class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Marcelo Junior</h3>
+                    <p>Desenvolvedor Full Stack com paixão por criar soluções inovadoras e impactantes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobremim" alt="Sobre mim">SOBRE</a></li>
+                        <li><a href="#projetos" alt="Projetos">PROJETOS</a></li>
+                        <li><a href="#curriculo" alt="Currículo">CURRICULO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: ma3179386@gmail.com</p>
+                    <p>Telefone: (14) 99739-8196</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <button class="Btn" id="githubBtn">
+                            <span class="svgContainer">
+                                <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="BG"></span>
+                        </button>
+                        <!-- From Uiverse.io by Gaurang7717 -->
+                        <button class="Btn2" id="linkedinBtn">
+                            <div class="sign">
+                                <svg fill="white" class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="1.6em"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div class="text"> Linkedln</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</html>
